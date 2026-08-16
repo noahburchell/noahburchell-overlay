@@ -1,16 +1,14 @@
-# overlay
+# my overlay
 
-A personal overlay.
+## packages
 
-## Packages
-
-| Package | Description |
+| package | description |
 | --- | --- |
 | `games-misc/cube-cli` | spinning cube |
 
-## Usage
+## usage
 
-### With `eselect repository`
+### with `eselect repository`
 
 ```sh
 emerge --ask app-eselect/eselect-repository
@@ -18,9 +16,9 @@ eselect repository add noahburchell git https://github.com/noahburchell/noahburc
 emaint sync --repo noahburchell
 ```
 
-### Manually
+### manually
 
-Create `/etc/portage/repos.conf/noahburchell.conf`:
+create `/etc/portage/repos.conf/noahburchell.conf`:
 
 ```ini
 [noahburchell]
@@ -30,24 +28,18 @@ sync-uri = https://github.com/noahburchell/noahburchell-overlay.git
 auto-sync = yes
 ```
 
-Then:
+then:
 
 ```sh
 emaint sync --repo noahburchell
 ```
 
-### Installing
+### installing
 
 ```sh
 emerge --ask games-misc/cube-cli
 ```
 
-The `-9999` ebuild builds from git `main` and needs to be unmasked first:
+## license
 
-```sh
-echo '=games-misc/cube-cli-9999 **' >> /etc/portage/package.accept_keywords/cube-cli
-```
-
-## License
-
-Ebuilds are distributed under the GNU General Public License v3.
+GNU General Public License v3.
