@@ -1,4 +1,4 @@
-# noahburchell overlay
+# overlay
 
 A personal overlay.
 
