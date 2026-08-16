@@ -17,8 +17,8 @@ PROPERTIES="live"
 pkg_pretend() {
 	[[ ${MERGE_TYPE} == binary ]] && return
 
-	if tc-is-gcc && [[ $(gcc-major-version) -lt 13 ]]; then
-		die "GCC 13 or newer is required, found $(gcc-fullversion)"
+	if tc-is-gcc && [[ $(gcc-major-version) -lt 14 ]]; then
+		die "GCC 14 or newer is required, found $(gcc-fullversion)"
 	fi
 }
 
