@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<maintainer type="person">
+		<email>noah@nburch.org</email>
+		<name>Noah Burchell</name>
+	</maintainer>
+	<longdescription lang="en">
+		Claude Desktop is Anthropic's official Electron-based desktop client
+		for Claude.ai, repackaged here from the upstream Debian package.
+		It provides the chat interface, Claude Code sessions and MCP server
+		integration in a standalone application window.
+	</longdescription>
+	<use>
+		<flag name="suid">
+			Install chrome-sandbox setuid root, for kernels built without
+			CONFIG_USER_NS. Otherwise the Electron namespace sandbox is used.
+		</flag>
+	</use>
+	<upstream>
+	</upstream>
+</pkgmetadata>
