@@ -5,6 +5,7 @@
 | package | description |
 | --- | --- |
 | `games-misc/cube-cli` | spinning cube |
+| `app-misc/claude-desktop` | repackaged anthropics .deb | ⚠️ PROPRIETARY ⚠️
 
 ## usage
 
