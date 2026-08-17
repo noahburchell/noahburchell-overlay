@@ -17,6 +17,4 @@
 			CONFIG_USER_NS. Otherwise the Electron namespace sandbox is used.
 		</flag>
 	</use>
-	<upstream>
-	</upstream>
 </pkgmetadata>

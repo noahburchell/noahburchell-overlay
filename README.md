@@ -5,7 +5,7 @@
 | package | description |
 | --- | --- |
 | `games-misc/cube-cli` | spinning cube |
-| `app-misc/claude-desktop` | ⚠️ PROPRIETARY ⚠️ <br /> repackaged anthropics <br /> official .deb | 
+| `app-misc/claude-desktop` | ⚠️ PROPRIETARY ⚠️ <br /> repackaged Anthropic's <br /> official .deb | 
 
 ## usage
 
@@ -39,6 +39,13 @@ emaint sync --repo noahburchell
 
 ```sh
 emerge --ask games-misc/cube-cli
+```
+
+`app-misc/claude-desktop` is proprietary, so portage will refuse to merge it until you accept the licence:
+
+```sh
+echo 'app-misc/claude-desktop all-rights-reserved' >> /etc/portage/package.license
+emerge --ask app-misc/claude-desktop
 ```
 
 ## license
