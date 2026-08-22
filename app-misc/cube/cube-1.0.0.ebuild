@@ -3,16 +3,15 @@
 
 EAPI=8
 
-inherit git-r3 toolchain-funcs
+inherit toolchain-funcs
 
-DESCRIPTION="spinning cube"
-HOMEPAGE="https://github.com/noahburchell/cube-cli"
-EGIT_REPO_URI="https://github.com/noahburchell/cube-cli.git"
+DESCRIPTION="spinning cube (and platonic solids)"
+HOMEPAGE="https://github.com/noahburchell/cube"
+SRC_URI="https://github.com/noahburchell/${PN}/archive/refs/tags/v${PV}.tar.gz -> ${P}.tar.gz"
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS=""
-PROPERTIES="live"
+KEYWORDS="amd64 arm64 x86"
 
 pkg_pretend() {
 	[[ ${MERGE_TYPE} == binary ]] && return

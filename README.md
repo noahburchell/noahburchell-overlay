@@ -4,7 +4,7 @@
 
 | package | description |
 | --- | --- |
-| `games-misc/cube-cli` | spinning cube |
+| `app-misc/cube` | spinning cube <br /> (and platonic solids) |
 | `app-misc/vufetch` | very useful fetch |
 | `app-misc/claude-desktop` | ⚠️ PROPRIETARY ⚠️ <br /> repackaged Anthropic's <br /> official .deb | 
 
@@ -39,7 +39,7 @@ emaint sync --repo noahburchell
 ### installing
 
 ```sh
-emerge --ask games-misc/cube-cli
+emerge --ask app-misc/cube
 ```
 
 `app-misc/claude-desktop` is proprietary, so portage will refuse to merge it until you accept the licence:

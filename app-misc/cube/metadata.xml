@@ -10,7 +10,7 @@
 			<email>noah@nburch.org</email>
 			<name>Noah Burchell</name>
 		</maintainer>
-		<bugs-to>https://github.com/noahburchell/cube-cli/issues</bugs-to>
-		<remote-id type="github">noahburchell/cube-cli</remote-id>
+		<bugs-to>https://github.com/noahburchell/cube/issues</bugs-to>
+		<remote-id type="github">noahburchell/cube</remote-id>
 	</upstream>
 </pkgmetadata>
