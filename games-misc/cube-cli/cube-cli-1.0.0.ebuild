@@ -11,7 +11,7 @@ SRC_URI="https://github.com/noahburchell/${PN}/archive/refs/tags/v${PV}.tar.gz -
 
 LICENSE="GPL-3"
 SLOT="0"
-KEYWORDS="~amd64 ~arm64 ~x86"
+KEYWORDS="amd64 arm64 x86"
 
 pkg_pretend() {
 	[[ ${MERGE_TYPE} == binary ]] && return
